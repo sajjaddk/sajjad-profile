@@ -12,7 +12,7 @@ test('has correct title and heading', async ({ page }) => {
 
 test('shows key skills', async ({ page }) => {
   const skills = page.locator('#skills li');
-  for (const s of ['Cypress', 'Postman', 'Rest Assured', 'Regression Testing']) {
+  for (const s of ['Cypress', 'TypeScript', 'Page Object Model', 'Allure Reports', 'AI-assisted Testing', 'Postman', 'Rest Assured', 'Regression Testing']) {
     await expect(skills.filter({ hasText: s }).first()).toBeVisible();
   }
 });
