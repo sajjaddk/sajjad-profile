@@ -12,6 +12,8 @@ A personal profile website, tested automatically with Playwright, and published 
 |---|---|
 | `index.html` | The website content (about, skills, experience, certifications, contact) |
 | `styles.css` | Look and layout, including the mobile layout |
+| `script.js` | English/Danish switcher; Danish text lives here (keys match `data-i18n` in `index.html`) |
+| `favicon.svg`, `og.png` | Browser tab icon and the preview image shown when the link is shared |
 | `Sajjad_CV.pdf` | The CV, offered as a download button on the site |
 | `tests/profile.spec.js` | Playwright tests that check the site |
 | `playwright.config.js` | Playwright settings: local server, browsers (desktop and mobile) |
@@ -57,7 +59,7 @@ Edit files  ->  git push to main  ->  GitHub Actions starts
 ## 4. Everyday tasks
 
 ### Change the content
-1. Edit `index.html` (text) or `styles.css` (look).
+1. Edit `index.html` (English text), `script.js` (Danish text) or `styles.css` (look). A test fails if a text has no Danish translation.
 2. Run the tests locally (see below).
 3. Commit and push:
    ```

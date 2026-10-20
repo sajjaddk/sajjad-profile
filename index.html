@@ -4,40 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>M. Sajjad – QA Engineer</title>
-  <meta name="description" content="Profile of M. Sajjad, QA Engineer based in Taastrup, Denmark. Cypress, Postman, Rest Assured, regression testing, CI/CD.">
+  <meta name="description" content="Profile of M. Sajjad, QA Engineer based in Taastrup, Denmark. Cypress, TypeScript, Postman, Rest Assured, regression testing, CI/CD.">
   <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://sajjaddk.github.io/sajjad-profile/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="M. Sajjad – QA Engineer">
+  <meta property="og:description" content="QA Engineer in Denmark: Cypress and TypeScript test automation, API testing and CI/CD.">
+  <meta property="og:url" content="https://sajjaddk.github.io/sajjad-profile/">
+  <meta property="og:image" content="https://sajjaddk.github.io/sajjad-profile/og.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="topbar">
     <div class="wrap bar">
       <a class="brand" href="#top"><span class="prompt">&gt;_</span> sajjad</a>
       <nav aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#education">Education</a>
-        <a href="#pipeline">This site</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#experience" data-i18n="nav.exp">Experience</a>
+        <a href="#certifications" data-i18n="nav.cert">Certifications</a>
+        <a href="#education" data-i18n="nav.edu">Education</a>
+        <a href="#pipeline" data-i18n="nav.site">This site</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="da" aria-pressed="false">DA</button>
+        </div>
       </nav>
     </div>
   </header>
 
+  <main id="main">
   <section class="hero" id="top">
     <div class="wrap hero-grid">
       <div>
-        <p class="eyebrow">Hello, I'm</p>
+        <p class="eyebrow" data-i18n="hero.hello">Hello, I'm</p>
         <h1>M. Sajjad</h1>
         <p class="role">QA Engineer</p>
-        <p class="lead">Quality assurance with an application-support background. I automate regression tests with Cypress and TypeScript, test REST APIs, and use AI-assisted tooling to write tests faster, with every test reviewed.</p>
-        <p class="location">Taastrup, Denmark</p>
+        <p class="lead" data-i18n="hero.lead">Quality assurance with an application-support background. I automate regression tests with Cypress and TypeScript, test REST APIs, and use AI-assisted tooling to write tests faster, with every test reviewed.</p>
+        <p class="location" data-i18n="hero.loc">Taastrup, Denmark</p>
         <div class="actions">
-          <a class="btn primary" href="#contact">Get in touch</a>
-          <a class="btn" href="Sajjad_CV.pdf" target="_blank" rel="noopener">View CV</a>
+          <a class="btn primary" href="#contact" data-i18n="hero.cta">Get in touch</a>
+          <a class="btn" href="Sajjad_CV.pdf" target="_blank" rel="noopener" data-i18n="hero.cv">View CV</a>
         </div>
+        <p class="social">
+          <a href="https://www.linkedin.com/in/sajjad-m-245b9314" target="_blank" rel="noopener noreferrer" data-testid="hero-linkedin">LinkedIn</a>
+          <a href="https://github.com/sajjaddk" target="_blank" rel="noopener noreferrer" data-testid="hero-github">GitHub</a>
+        </p>
       </div>
       <aside class="terminal" aria-label="Summary">
         <div class="term-bar"><i></i><i></i><i></i><span>profile.json</span></div>
@@ -54,51 +71,51 @@
     </div>
   </section>
 
-  <main id="main">
+
     <section id="about">
       <div class="wrap">
-        <h2><span class="num">01</span> About</h2>
-        <p class="prose">QA Engineer at Sapiens with a background in application support and IT consulting. I focus on regression testing, Cypress test automation and REST API testing, and I know how customer issues look from the support side, because I spent years reproducing and fixing them.</p>
+        <h2><span class="num">01</span> <span data-i18n="about.t">About</span></h2>
+        <p class="prose" data-i18n="about.p">QA Engineer at Sapiens with a background in application support and IT consulting. I focus on regression testing, Cypress test automation and REST API testing, and I know how customer issues look from the support side, because I spent years reproducing and fixing them.</p>
         <ul class="stats">
-          <li><strong>2019</strong><span>in IT since</span></li>
-          <li><strong>3</strong><span>Microsoft certifications</span></li>
-          <li><strong>M.S.</strong><span>Computer Science</span></li>
-          <li><strong>2</strong><span>languages</span></li>
+          <li><strong>2019</strong><span data-i18n="stat.1">in IT since</span></li>
+          <li><strong>4+</strong><span data-i18n="stat.2">years at Sapiens</span></li>
+          <li><strong>3</strong><span data-i18n="stat.3">Microsoft certifications</span></li>
+          <li><strong>M.S.</strong><span data-i18n="stat.4">Computer Science</span></li>
         </ul>
       </div>
     </section>
 
     <section id="skills">
       <div class="wrap">
-        <h2><span class="num">02</span> Skills</h2>
+        <h2><span class="num">02</span> <span data-i18n="skills.t">Skills</span></h2>
         <div class="skill-grid">
           <div class="skill-group">
-            <h3>Testing &amp; Automation</h3>
+            <h3 data-i18n="sk.1">Testing &amp; Automation</h3>
             <ul class="chips">
               <li>Cypress</li>
               <li>TypeScript</li>
               <li>Page Object Model</li>
-              <li>Regression Testing</li>
-              <li>Manual Testing</li>
+              <li data-i18n="chip.reg">Regression Testing</li>
+              <li data-i18n="chip.man">Manual Testing</li>
               <li>Postman</li>
               <li>Rest Assured</li>
               <li>Allure Reports</li>
-              <li>AI-assisted Testing (Claude Code)</li>
+              <li data-i18n="chip.ai">AI-assisted Testing (Claude Code)</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Data &amp; CI/CD</h3>
+            <h3 data-i18n="sk.2">Data &amp; CI/CD</h3>
             <ul class="chips">
               <li>SQL / PL/SQL</li>
-              <li>Oracle DB Validation</li>
-              <li>Test Data Generation</li>
+              <li data-i18n="chip.ora">Oracle DB Validation</li>
+              <li data-i18n="chip.data">Test Data Generation</li>
               <li>Jenkins</li>
               <li>GitHub</li>
               <li>JFrog</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Cloud &amp; Identity</h3>
+            <h3 data-i18n="sk.3">Cloud &amp; Identity</h3>
             <ul class="chips">
               <li>Azure</li>
               <li>Entra ID / Active Directory</li>
@@ -106,11 +123,11 @@
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Work &amp; Support</h3>
+            <h3 data-i18n="sk.4">Work &amp; Support</h3>
             <ul class="chips">
               <li>Jira &amp; Confluence</li>
               <li>ServiceNow</li>
-              <li>1 &amp; 2 Level IT Support</li>
+              <li data-i18n="chip.sup">1 &amp; 2 Level IT Support</li>
               <li>Claude AI</li>
             </ul>
           </div>
@@ -120,34 +137,34 @@
 
     <section id="experience">
       <div class="wrap">
-        <h2><span class="num">03</span> Work Experience</h2>
+        <h2><span class="num">03</span> <span data-i18n="exp.t">Work Experience</span></h2>
         <div class="timeline">
 
           <article class="job current">
             <h3>Quality Assurance Engineer</h3>
-            <p class="meta"><span class="org">Sapiens</span> <span class="when">Feb 2026 – Present</span></p>
+            <p class="meta"><span class="org">Sapiens</span> <span class="when" data-i18n="exp.1.when">Feb 2026 – Present</span></p>
             <ul>
-              <li>Performed regression testing to ensure application stability after releases</li>
-              <li>Built and maintained Cypress end-to-end tests in TypeScript across several web applications, using the Page Object Model and reusable test helpers</li>
-              <li>Verified data in the Oracle database as part of UI and API tests</li>
-              <li>Produced Allure test reports and ran test suites against multiple test environments</li>
-              <li>Used Claude AI (Claude Code) to speed up writing and reviewing Cypress tests, with human review of every test before it was added</li>
-              <li>Monitored automated test pipelines in Jenkins</li>
-              <li>Tested REST API endpoints using Postman</li>
+              <li data-i18n="exp.1.1">Performed regression testing to ensure application stability after releases</li>
+              <li data-i18n="exp.1.2">Built and maintained Cypress end-to-end tests in TypeScript across several web applications, using the Page Object Model and reusable test helpers</li>
+              <li data-i18n="exp.1.3">Verified data in the Oracle database as part of UI and API tests</li>
+              <li data-i18n="exp.1.4">Produced Allure test reports and ran test suites against multiple test environments</li>
+              <li data-i18n="exp.1.5">Used Claude AI (Claude Code) to speed up writing and reviewing Cypress tests, with human review of every test before it was added</li>
+              <li data-i18n="exp.1.6">Monitored automated test pipelines in Jenkins</li>
+              <li data-i18n="exp.1.7">Tested REST API endpoints using Postman</li>
             </ul>
-            <p class="tools"><strong>Tools:</strong> Jira, Confluence, Kanban Board, Cypress, JFrog, Postman, PL/SQL, Jenkins, GitHub, Claude AI, Rest Assured, ServiceNow</p>
+            <p class="tools"><strong data-i18n="exp.tools">Tools:</strong> Jira, Confluence, Kanban Board, Cypress, JFrog, Postman, PL/SQL, Jenkins, GitHub, Claude AI, Rest Assured, ServiceNow</p>
           </article>
 
           <article class="job">
             <h3>Application Support Specialist</h3>
             <p class="meta"><span class="org">Sapiens</span> <span class="when">Jun 2022 – Jan 2026</span></p>
             <ul>
-              <li>Application support for customers</li>
-              <li>Assisted, troubleshot and provided technical guidance to customers</li>
-              <li>Monitored Datadog alerts for cloud customer environments</li>
-              <li>Reproduced issues reported by customers</li>
-              <li>Updated the Knowledge Base with technical guides and tips</li>
-              <li>Hotfix release management</li>
+              <li data-i18n="exp.2.1">Application support for customers</li>
+              <li data-i18n="exp.2.2">Assisted, troubleshot and provided technical guidance to customers</li>
+              <li data-i18n="exp.2.3">Monitored Datadog alerts for cloud customer environments</li>
+              <li data-i18n="exp.2.4">Reproduced issues reported by customers</li>
+              <li data-i18n="exp.2.5">Updated the Knowledge Base with technical guides and tips</li>
+              <li data-i18n="exp.2.6">Hotfix release management</li>
             </ul>
           </article>
 
@@ -155,10 +172,10 @@
             <h3>Support Specialist</h3>
             <p class="meta"><span class="org">Discover Network</span> <span class="when">Nov 2021 – Mar 2022</span></p>
             <ul>
-              <li>1st &amp; 2nd level IT support</li>
-              <li>Deployment of Windows/macOS</li>
-              <li>Documentation and asset management in CMDB</li>
-              <li>Active Directory, Slack, Okta, Google Workspace and Citrix</li>
+              <li data-i18n="exp.3.1">1st &amp; 2nd level IT support</li>
+              <li data-i18n="exp.3.2">Deployment of Windows/macOS</li>
+              <li data-i18n="exp.3.3">Documentation and asset management in CMDB</li>
+              <li data-i18n="exp.3.4">Active Directory, Slack, Okta, Google Workspace and Citrix</li>
             </ul>
           </article>
 
@@ -166,9 +183,9 @@
             <h3>IT Consultant</h3>
             <p class="meta"><span class="org">Freelancer</span> <span class="when">Jun 2019 – Mar 2022</span></p>
             <ul>
-              <li>1st &amp; 2nd level IT support (J.P. Morgan / Nielsen Media / Club Car / Dentsu)</li>
-              <li>Microsoft at Lyngby: hardware troubleshooting of Microsoft Surface</li>
-              <li>Nike at Herlev: installation of HP cash counter</li>
+              <li data-i18n="exp.4.1">1st &amp; 2nd level IT support (J.P. Morgan / Nielsen Media / Club Car / Dentsu)</li>
+              <li data-i18n="exp.4.2">Microsoft at Lyngby: hardware troubleshooting of Microsoft Surface</li>
+              <li data-i18n="exp.4.3">Nike at Herlev: installation of HP cash counter</li>
             </ul>
           </article>
 
@@ -178,7 +195,7 @@
 
     <section id="certifications">
       <div class="wrap">
-        <h2><span class="num">04</span> Certifications</h2>
+        <h2><span class="num">04</span> <span data-i18n="cert.t">Certifications</span></h2>
         <ul class="cards">
           <li><span class="code">MD-100 · MD-101</span><strong>Modern Desktop Administrator</strong><span>Microsoft 365</span></li>
           <li><span class="code">AZ-104</span><strong>Azure Administrator Associate</strong><span>Microsoft Azure</span></li>
@@ -189,17 +206,17 @@
 
     <section id="education">
       <div class="wrap">
-        <h2><span class="num">05</span> Education &amp; Languages</h2>
+        <h2><span class="num">05</span> <span data-i18n="edu.t">Education &amp; Languages</span></h2>
         <div class="two">
           <div class="panel">
-            <h3>Education</h3>
-            <p><strong>M.S. in Computer Science</strong></p>
-            <p class="muted">Blekinge Tekniska Högskola (Sweden), 2011</p>
+            <h3 data-i18n="edu.h">Education</h3>
+            <p><strong data-i18n="edu.deg">M.S. in Computer Science</strong></p>
+            <p class="muted" data-i18n="edu.uni">Blekinge Tekniska Högskola (Sweden), 2011</p>
           </div>
           <div class="panel">
-            <h3>Languages</h3>
-            <p><strong>English</strong> <span class="muted">Professional</span></p>
-            <p><strong>Danish</strong> <span class="muted">Intermediate</span></p>
+            <h3 data-i18n="lang.h">Languages</h3>
+            <p><strong data-i18n="lang.en">English</strong> <span class="muted" data-i18n="lang.en.l">Professional</span></p>
+            <p><strong data-i18n="lang.da">Danish</strong> <span class="muted" data-i18n="lang.da.l">Intermediate</span></p>
           </div>
         </div>
       </div>
@@ -207,27 +224,28 @@
 
     <section id="pipeline">
       <div class="wrap">
-        <h2><span class="num">06</span> About this site</h2>
-        <p class="prose">This page is tested and shipped like a real project. Every push runs automated Playwright tests on desktop and mobile Chrome, and the site is only published if they pass.</p>
+        <h2><span class="num">06</span> <span data-i18n="site.t">About this site</span></h2>
+        <p class="prose" data-i18n="site.p">This page is tested and shipped like a real project. Every push runs automated Playwright tests on desktop and mobile Chrome, and the site is only published if they pass.</p>
         <ol class="flow">
-          <li><strong>Push</strong><span>git push to main</span></li>
+          <li><strong>Push</strong><span data-i18n="flow.1">git push to main</span></li>
           <li><strong>Test</strong><span>Playwright, GitHub Actions</span></li>
           <li><strong>Deploy</strong><span>GitHub Pages</span></li>
         </ol>
-        <p><a href="https://github.com/sajjaddk/sajjad-profile" target="_blank" rel="noopener noreferrer">View the source on GitHub →</a></p>
+        <p><a href="https://github.com/sajjaddk/sajjad-profile" target="_blank" rel="noopener noreferrer" data-i18n="site.link">View the source on GitHub →</a></p>
       </div>
     </section>
 
     <section id="contact">
       <div class="wrap">
-        <h2><span class="num">07</span> Contact</h2>
-        <p class="prose">Open to a conversation about QA, test automation, or IT quality work.</p>
+        <h2><span class="num">07</span> <span data-i18n="con.t">Contact</span></h2>
+        <p class="prose" data-i18n="con.p">Open to a conversation about QA, test automation, or IT quality work.</p>
         <p class="links">
           <a href="mailto:sajjad81@gmail.com">sajjad81@gmail.com</a>
           <a href="https://www.linkedin.com/in/sajjad-m-245b9314" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/sajjaddk" target="_blank" rel="noopener noreferrer">GitHub</a>
         </p>
-        <p class="muted">Taastrup, Denmark</p>
-        <p><a class="btn primary" href="Sajjad_CV.pdf" download>Download CV (PDF)</a></p>
+        <p class="muted" data-i18n="con.loc">Taastrup, Denmark</p>
+        <p><a class="btn primary" href="Sajjad_CV.pdf" download data-i18n="con.dl">Download CV (PDF)</a></p>
       </div>
     </section>
   </main>
@@ -235,6 +253,6 @@
   <footer>
     <div class="wrap"><p>© <span id="year">2026</span> M. Sajjad</p></div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
 </body>
 </html>

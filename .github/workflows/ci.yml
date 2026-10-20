@@ -43,7 +43,7 @@ jobs:
       - name: Assemble site
         run: |
           mkdir _site
-          cp index.html styles.css Sajjad_CV.pdf _site/
+          cp index.html styles.css script.js favicon.svg og.png Sajjad_CV.pdf _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
