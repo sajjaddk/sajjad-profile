@@ -16,7 +16,7 @@
     'hero.cta': 'Kontakt mig',
     'hero.cv': 'Se CV',
     'about.t': 'Om mig',
-    'about.p': 'QA Engineer hos Sapiens med baggrund i applikationssupport og IT-konsulentarbejde. Jeg arbejder med regressionstest, testautomatisering i Cypress og test af REST API\'er, og jeg kender kundernes problemer fra supportsiden, fordi jeg i mange år har genskabt og løst dem.',
+    'about.p': 'QA Engineer med baggrund i applikationssupport og IT-konsulentarbejde, senest hos Sapiens. Jeg arbejder med regressionstest, testautomatisering i Cypress og test af REST API\'er, og jeg kender kundernes problemer fra supportsiden, fordi jeg i mange år har genskabt og løst dem.',
     'stat.1': 'i IT siden',
     'stat.2': 'år hos Sapiens',
     'stat.3': 'Microsoft-certificeringer',
@@ -34,7 +34,7 @@
     'chip.data': 'Generering af testdata',
     'chip.sup': '1. og 2. level IT-support',
     'exp.t': 'Erhvervserfaring',
-    'exp.1.when': 'Feb 2026 – nu',
+    'exp.1.when': 'Feb 2026 – okt 2026',
     'exp.1.1': 'Udførte regressionstest for at sikre applikationens stabilitet efter releases',
     'exp.1.2': 'Udviklede og vedligeholdt Cypress end-to-end-test i TypeScript på tværs af flere webapplikationer med Page Object Model og genbrugelige testhjælpere',
     'exp.1.3': 'Verificerede data i Oracle-databasen som en del af UI- og API-test',
@@ -77,7 +77,7 @@
     'flow.1': 'git push til main',
     'site.link': 'Se kildekoden på GitHub →',
     'con.t': 'Kontakt',
-    'con.p': 'Åben for en samtale om QA, testautomatisering eller IT-kvalitet.',
+    'con.p': 'Åben for nye roller inden for QA og testautomatisering og kan starte med det samme. Skriv gerne, hvis du vil snakke om QA, testautomatisering eller IT-kvalitet.',
     'con.loc': 'Taastrup, Danmark',
     'con.dl': 'Download CV (PDF)'
   };

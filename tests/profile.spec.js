@@ -18,11 +18,11 @@ test('shows key skills', async ({ page }) => {
   }
 });
 
-test('lists all four jobs, current role first', async ({ page }) => {
+test('lists all four jobs, most recent role first', async ({ page }) => {
   const jobs = page.locator('#experience .job');
   await expect(jobs).toHaveCount(4);
   await expect(jobs.first().getByRole('heading')).toHaveText('Quality Assurance Engineer');
-  await expect(jobs.first()).toContainText('Present');
+  await expect(jobs.first()).toContainText('Feb 2026 – Oct 2026');
 });
 
 test('lists three certifications', async ({ page }) => {
@@ -82,7 +82,7 @@ test('language switch toggles English and Danish', async ({ page }) => {
   await page.getByRole('button', { name: 'DA' }).click();
   await expect(page.locator('html')).toHaveAttribute('lang', 'da');
   await expect(page.locator('#about p.prose')).toContainText('baggrund i applikationssupport');
-  await expect(page.locator('#experience .job').first()).toContainText('nu');
+  await expect(page.locator('#experience .job').first()).toContainText('okt 2026');
   await page.getByRole('button', { name: 'EN' }).click();
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   await expect(page.locator('#about p.prose')).toContainText('background in application support');
