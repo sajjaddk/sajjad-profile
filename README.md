@@ -1,6 +1,6 @@
 # Sajjad – Profile Website
 
-A personal profile website built from my CV, tested automatically with Playwright, and published to GitHub Pages by a CI/CD pipeline.
+A personal profile website, tested automatically with Playwright, and published to GitHub Pages by a CI/CD pipeline.
 
 **Live site:** https://sajjaddk.github.io/sajjad-profile/
 
@@ -23,12 +23,11 @@ A personal profile website built from my CV, tested automatically with Playwrigh
 
 ## 2. How it was built (step by step)
 
-1. **Read the CV.** The content of `Sajjad_CV.pdf` became the sections of the page.
-2. **Write the site.** It is plain HTML and CSS, with no framework and no build step. This keeps it fast, simple and easy to host.
-3. **Add Playwright tests.** `serve` hosts the site locally and Playwright opens it in real Chromium (desktop and a Pixel 7 phone profile). The tests check the title, skills, jobs, certifications, nav links, email and LinkedIn links, the PDF download, and mobile overflow.
-4. **Add the pipeline.** `ci.yml` tells GitHub to run the tests on every push and deploy the site if they pass.
-5. **Push to GitHub.** The code lives at https://github.com/sajjaddk/sajjad-profile.
-6. **Enable Pages.** In Settings → Pages, set Source to **GitHub Actions**.
+
+1. **Write the site.** It is plain HTML and CSS, with no framework and no build step. This keeps it fast, simple and easy to host.
+2. **Add Playwright tests.** `serve` hosts the site locally and Playwright opens it in real Chromium (desktop and a Pixel 7 phone profile). The tests check the title, skills, jobs, certifications, nav links, email and LinkedIn links, the PDF download, and mobile overflow.
+3. **Add the pipeline.** `ci.yml` tells GitHub to run the tests on every push and deploy the site if they pass.
+4. **Push to GitHub.** The code lives at https://github.com/sajjaddk/sajjad-profile.
 
 ---
 
@@ -90,7 +89,7 @@ test('example', async ({ page }) => {
 Tests run on both the desktop and mobile projects.
 
 ### Update the CV
-Replace `Sajjad_CV.pdf` (keep the same file name), then push as above.
+
 
 ---
 
