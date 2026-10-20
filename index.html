@@ -4,123 +4,227 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>M. Sajjad – QA Engineer</title>
-  <meta name="description" content="Profile of M. Sajjad, QA Engineer based in Taastrup, Denmark. Cypress, Postman, Rest Assured, regression testing.">
+  <meta name="description" content="Profile of M. Sajjad, QA Engineer based in Taastrup, Denmark. Cypress, Postman, Rest Assured, regression testing, CI/CD.">
+  <meta name="theme-color" content="#0b1220">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <h1>M. Sajjad</h1>
-    <p class="role">QA Engineer</p>
-    <p class="location">Taastrup, Denmark</p>
-    <nav aria-label="Primary">
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap bar">
+      <a class="brand" href="#top"><span class="prompt">&gt;_</span> sajjad</a>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+        <a href="#pipeline">This site</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>M. Sajjad</h1>
+        <p class="role">QA Engineer</p>
+        <p class="lead">Quality assurance with an application-support background. I automate regression tests with Cypress, test REST APIs, and keep test pipelines healthy.</p>
+        <p class="location">Taastrup, Denmark</p>
+        <div class="actions">
+          <a class="btn primary" href="#contact">Get in touch</a>
+          <a class="btn" href="Sajjad_CV.pdf" target="_blank" rel="noopener">View CV</a>
+        </div>
+      </div>
+      <aside class="terminal" aria-label="Summary">
+        <div class="term-bar"><i></i><i></i><i></i><span>profile.json</span></div>
+<pre><code>{
+  <span class="k">"name"</span>: <span class="s">"M. Sajjad"</span>,
+  <span class="k">"role"</span>: <span class="s">"QA Engineer"</span>,
+  <span class="k">"company"</span>: <span class="s">"Sapiens"</span>,
+  <span class="k">"automation"</span>: [<span class="s">"Cypress"</span>],
+  <span class="k">"api"</span>: [<span class="s">"Postman"</span>, <span class="s">"Rest Assured"</span>],
+  <span class="k">"ci"</span>: [<span class="s">"Jenkins"</span>, <span class="s">"GitHub"</span>],
+  <span class="k">"languages"</span>: [<span class="s">"English"</span>, <span class="s">"Danish"</span>]
+}</code></pre>
+      </aside>
+    </div>
+  </section>
+
+  <main id="main">
     <section id="about">
-      <h2>About</h2>
-      <p>QA Engineer at Sapiens with a background in application support and IT consulting. I focus on regression testing, Cypress test automation and REST API testing, and I know how customer issues look from the support side.</p>
+      <div class="wrap">
+        <h2><span class="num">01</span> About</h2>
+        <p class="prose">QA Engineer at Sapiens with a background in application support and IT consulting. I focus on regression testing, Cypress test automation and REST API testing, and I know how customer issues look from the support side, because I spent years reproducing and fixing them.</p>
+        <ul class="stats">
+          <li><strong>2019</strong><span>in IT since</span></li>
+          <li><strong>3</strong><span>Microsoft certifications</span></li>
+          <li><strong>M.S.</strong><span>Computer Science</span></li>
+          <li><strong>2</strong><span>languages</span></li>
+        </ul>
+      </div>
     </section>
 
     <section id="skills">
-      <h2>Skills</h2>
-      <ul class="chips">
-        <li>Cypress</li>
-        <li>Regression Testing</li>
-        <li>Manual Testing</li>
-        <li>Postman</li>
-        <li>Rest Assured</li>
-        <li>SQL / PL/SQL</li>
-        <li>Jira &amp; Confluence</li>
-        <li>Jenkins</li>
-        <li>GitHub</li>
-        <li>Azure</li>
-        <li>Entra ID / Active Directory</li>
-        <li>1 &amp; 2 Level IT Support</li>
-        <li>Claude AI</li>
-      </ul>
+      <div class="wrap">
+        <h2><span class="num">02</span> Skills</h2>
+        <div class="skill-grid">
+          <div class="skill-group">
+            <h3>Testing &amp; Automation</h3>
+            <ul class="chips">
+              <li>Cypress</li>
+              <li>Regression Testing</li>
+              <li>Manual Testing</li>
+              <li>Postman</li>
+              <li>Rest Assured</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Data &amp; CI/CD</h3>
+            <ul class="chips">
+              <li>SQL / PL/SQL</li>
+              <li>Jenkins</li>
+              <li>GitHub</li>
+              <li>JFrog</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Cloud &amp; Identity</h3>
+            <ul class="chips">
+              <li>Azure</li>
+              <li>Entra ID / Active Directory</li>
+              <li>Datadog</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Work &amp; Support</h3>
+            <ul class="chips">
+              <li>Jira &amp; Confluence</li>
+              <li>ServiceNow</li>
+              <li>1 &amp; 2 Level IT Support</li>
+              <li>Claude AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="experience">
-      <h2>Work Experience</h2>
+      <div class="wrap">
+        <h2><span class="num">03</span> Work Experience</h2>
+        <div class="timeline">
 
-      <article class="job">
-        <h3>Quality Assurance Engineer</h3>
-        <p class="meta">Sapiens · Feb 2026 – Present</p>
-        <ul>
-          <li>Performed regression testing to ensure application stability after releases</li>
-          <li>Automated testing using Cypress</li>
-          <li>Monitored automated test pipelines in Jenkins</li>
-          <li>Tested REST API endpoints using Postman</li>
-          <li>Tools: Jira, Confluence, Kanban Board, Cypress, JFrog, Postman, PL/SQL, Jenkins, GitHub, Claude AI, Rest Assured and ServiceNow</li>
-        </ul>
-      </article>
+          <article class="job current">
+            <h3>Quality Assurance Engineer</h3>
+            <p class="meta"><span class="org">Sapiens</span> <span class="when">Feb 2026 – Present</span></p>
+            <ul>
+              <li>Performed regression testing to ensure application stability after releases</li>
+              <li>Automated testing using Cypress</li>
+              <li>Monitored automated test pipelines in Jenkins</li>
+              <li>Tested REST API endpoints using Postman</li>
+            </ul>
+            <p class="tools"><strong>Tools:</strong> Jira, Confluence, Kanban Board, Cypress, JFrog, Postman, PL/SQL, Jenkins, GitHub, Claude AI, Rest Assured, ServiceNow</p>
+          </article>
 
-      <article class="job">
-        <h3>Application Support Specialist</h3>
-        <p class="meta">Sapiens · Jun 2022 – Jan 2026</p>
-        <ul>
-          <li>Application support for customers</li>
-          <li>Assisted, troubleshot and provided technical guidance to customers</li>
-          <li>Monitored Datadog alerts for cloud customer environments</li>
-          <li>Reproduced issues reported by customers</li>
-          <li>Updated the Knowledge Base with technical guides and tips</li>
-          <li>Hotfix release management</li>
-        </ul>
-      </article>
+          <article class="job">
+            <h3>Application Support Specialist</h3>
+            <p class="meta"><span class="org">Sapiens</span> <span class="when">Jun 2022 – Jan 2026</span></p>
+            <ul>
+              <li>Application support for customers</li>
+              <li>Assisted, troubleshot and provided technical guidance to customers</li>
+              <li>Monitored Datadog alerts for cloud customer environments</li>
+              <li>Reproduced issues reported by customers</li>
+              <li>Updated the Knowledge Base with technical guides and tips</li>
+              <li>Hotfix release management</li>
+            </ul>
+          </article>
 
-      <article class="job">
-        <h3>Support Specialist</h3>
-        <p class="meta">Discover Network · Nov 2021 – Mar 2022</p>
-        <ul>
-          <li>1st &amp; 2nd level IT support</li>
-          <li>Deployment of Windows/macOS</li>
-          <li>Documentation and asset management in CMDB</li>
-          <li>Active Directory, Slack, Okta, Google Workspace and Citrix</li>
-        </ul>
-      </article>
+          <article class="job">
+            <h3>Support Specialist</h3>
+            <p class="meta"><span class="org">Discover Network</span> <span class="when">Nov 2021 – Mar 2022</span></p>
+            <ul>
+              <li>1st &amp; 2nd level IT support</li>
+              <li>Deployment of Windows/macOS</li>
+              <li>Documentation and asset management in CMDB</li>
+              <li>Active Directory, Slack, Okta, Google Workspace and Citrix</li>
+            </ul>
+          </article>
 
-      <article class="job">
-        <h3>IT Consultant</h3>
-        <p class="meta">Freelancer · Jun 2019 – Mar 2022</p>
-        <ul>
-          <li>1st &amp; 2nd level IT support (J.P. Morgan / Nielsen Media / Club Car / Dentsu)</li>
-          <li>Microsoft at Lyngby: hardware troubleshooting of Microsoft Surface</li>
-          <li>Nike at Herlev: installation of HP cash counter</li>
-        </ul>
-      </article>
+          <article class="job">
+            <h3>IT Consultant</h3>
+            <p class="meta"><span class="org">Freelancer</span> <span class="when">Jun 2019 – Mar 2022</span></p>
+            <ul>
+              <li>1st &amp; 2nd level IT support (J.P. Morgan / Nielsen Media / Club Car / Dentsu)</li>
+              <li>Microsoft at Lyngby: hardware troubleshooting of Microsoft Surface</li>
+              <li>Nike at Herlev: installation of HP cash counter</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
     </section>
 
     <section id="certifications">
-      <h2>Certifications</h2>
-      <ul class="cards">
-        <li><strong>Modern Desktop Administrator</strong><span>Microsoft 365 · MD-100, MD-101</span></li>
-        <li><strong>Azure Administrator Associate</strong><span>Microsoft Azure · AZ-104</span></li>
-        <li><strong>Security Operations Analyst</strong><span>Microsoft · SC-200</span></li>
-      </ul>
+      <div class="wrap">
+        <h2><span class="num">04</span> Certifications</h2>
+        <ul class="cards">
+          <li><span class="code">MD-100 · MD-101</span><strong>Modern Desktop Administrator</strong><span>Microsoft 365</span></li>
+          <li><span class="code">AZ-104</span><strong>Azure Administrator Associate</strong><span>Microsoft Azure</span></li>
+          <li><span class="code">SC-200</span><strong>Security Operations Analyst</strong><span>Microsoft</span></li>
+        </ul>
+      </div>
     </section>
 
     <section id="education">
-      <h2>Education &amp; Languages</h2>
-      <p><strong>M.S. in Computer Science</strong>, Blekinge Tekniska Högskola (Sweden), 2011</p>
-      <p><strong>Languages:</strong> English (Professional), Danish (Intermediate)</p>
+      <div class="wrap">
+        <h2><span class="num">05</span> Education &amp; Languages</h2>
+        <div class="two">
+          <div class="panel">
+            <h3>Education</h3>
+            <p><strong>M.S. in Computer Science</strong></p>
+            <p class="muted">Blekinge Tekniska Högskola (Sweden), 2011</p>
+          </div>
+          <div class="panel">
+            <h3>Languages</h3>
+            <p><strong>English</strong> <span class="muted">Professional</span></p>
+            <p><strong>Danish</strong> <span class="muted">Intermediate</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pipeline">
+      <div class="wrap">
+        <h2><span class="num">06</span> About this site</h2>
+        <p class="prose">This page is tested and shipped like a real project. Every push runs automated Playwright tests on desktop and mobile Chrome, and the site is only published if they pass.</p>
+        <ol class="flow">
+          <li><strong>Push</strong><span>git push to main</span></li>
+          <li><strong>Test</strong><span>Playwright, GitHub Actions</span></li>
+          <li><strong>Deploy</strong><span>GitHub Pages</span></li>
+        </ol>
+        <p><a href="https://github.com/sajjaddk/sajjad-profile" target="_blank" rel="noopener noreferrer">View the source on GitHub →</a></p>
+      </div>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <p><a href="mailto:sajjad81@gmail.com">sajjad81@gmail.com</a> · Taastrup, Denmark</p>
-      <p><a href="https://www.linkedin.com/in/sajjad-m-245b9314" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-      <p><a class="button" href="Sajjad_CV.pdf" download>Download CV (PDF)</a></p>
+      <div class="wrap">
+        <h2><span class="num">07</span> Contact</h2>
+        <p class="prose">Open to a conversation about QA, test automation, or IT quality work.</p>
+        <p class="links">
+          <a href="mailto:sajjad81@gmail.com">sajjad81@gmail.com</a>
+          <a href="https://www.linkedin.com/in/sajjad-m-245b9314" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
+        <p class="muted">Taastrup, Denmark</p>
+        <p><a class="btn primary" href="Sajjad_CV.pdf" download>Download CV (PDF)</a></p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year">2026</span> M. Sajjad</p>
+    <div class="wrap"><p>© <span id="year">2026</span> M. Sajjad</p></div>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
