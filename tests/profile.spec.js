@@ -113,3 +113,15 @@ for (const lang of ['en', 'da']) {
     expect(results.violations.map(v => `${v.id}: ${v.nodes.length} node(s)`)).toEqual([]);
   });
 }
+
+test('shows two projects with links to their GitHub repositories', async ({ page }) => {
+  const projects = page.locator('#projects .project');
+  await expect(projects).toHaveCount(2);
+  await expect(projects.nth(0).getByRole('link')).toHaveAttribute('href', 'https://github.com/sajjaddk/project-demo');
+  await expect(projects.nth(1).getByRole('link')).toHaveAttribute('href', 'https://github.com/sajjaddk/jenkin');
+  await expect(projects.nth(1)).toContainText('Playwright');
+});
+
+test('Playwright is listed as a skill', async ({ page }) => {
+  await expect(page.locator('#skills li').filter({ hasText: /^Playwright$/ })).toHaveCount(1);
+});
