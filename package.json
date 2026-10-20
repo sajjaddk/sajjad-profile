@@ -1,0 +1,13 @@
+{
+  "name": "sajjad-profile",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "serve . -l 3000",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "serve": "^14.2.4"
+  }
+}
