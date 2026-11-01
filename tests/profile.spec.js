@@ -22,7 +22,7 @@ test('lists all four jobs, most recent role first', async ({ page }) => {
   const jobs = page.locator('#experience .job');
   await expect(jobs).toHaveCount(4);
   await expect(jobs.first().getByRole('heading')).toHaveText('Quality Assurance Engineer');
-  await expect(jobs.first()).toContainText('Feb 2026 – Oct 2026');
+  await expect(jobs.first()).toContainText('Dec 2025 – Oct 2026');
 });
 
 test('lists three certifications', async ({ page }) => {
