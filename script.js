@@ -62,6 +62,7 @@
     'proj.1.l': 'Se project-demo på GitHub →',
     'proj.2.d': 'API- og UI-test af offentlige øvesider i Playwright, Cypress og Newman. Playwright API-testene dækker login, oprettelse, opdatering, sletning, forbudte kald og ugyldige data, og hver test rydder op efter sig selv. Køres af en Jenkins-pipeline på min egen Ubuntu-server med Allure-rapporter.',
     'proj.2.l': 'Se jenkin på GitHub →',
+    'proj.2.l2': 'Se testrapporter →',
     'cert.t': 'Certificeringer',
     'edu.t': 'Uddannelse og sprog',
     'edu.h': 'Uddannelse',
