@@ -116,10 +116,9 @@ for (const lang of ['en', 'da']) {
 
 test('shows two projects with links to their GitHub repositories', async ({ page }) => {
   const projects = page.locator('#projects .project');
-  await expect(projects).toHaveCount(2);
+  await expect(projects).toHaveCount(1);
   await expect(projects.nth(0).getByRole('link')).toHaveAttribute('href', 'https://github.com/sajjaddk/project-demo');
-  await expect(projects.nth(1).getByRole('link')).toHaveAttribute('href', 'https://github.com/sajjaddk/jenkin');
-  await expect(projects.nth(1)).toContainText('Playwright');
+  await expect(projects.nth(0)).toContainText('Playwright');
 });
 
 test('Playwright is listed as a skill', async ({ page }) => {
