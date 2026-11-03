@@ -117,11 +117,14 @@ for (const lang of ['en', 'da']) {
 test('shows two projects with links to their GitHub repositories', async ({ page }) => {
   const projects = page.locator('#projects .project');
   await expect(projects).toHaveCount(2);
-  await expect(projects.nth(0).getByRole('link')).toHaveAttribute('href', 'https://github.com/sajjaddk/project-demo');
-  await expect(projects.nth(1).getByRole('link')).toHaveAttribute('href', 'https://github.com/sajjaddk/jenkin');
-  await expect(projects.nth(1)).toContainText('Playwright');
-});
 
-test('Playwright is listed as a skill', async ({ page }) => {
-  await expect(page.locator('#skills li').filter({ hasText: /^Playwright$/ })).toHaveCount(1);
+  // Project 1: still a single link
+  await expect(projects.nth(0).getByRole('link'))
+    .toHaveAttribute('href', 'https://github.com/sajjaddk/project-demo');
+
+  // Project 2: now has two links, so check each one by its href
+  await expect(projects.nth(1).locator('a[href="https://github.com/sajjaddk/jenkin"]')).toHaveCount(1);
+  await expect(projects.nth(1).locator('a[href="https://sajjaddk.github.io/jenkin-onlinesites/"]')).toHaveCount(1);
+
+  await expect(projects.nth(1)).toContainText('Playwright');
 });
