@@ -6,14 +6,14 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('has correct title and heading', async ({ page }) => {
-  await expect(page).toHaveTitle(/Sajjad.*QA Engineer/);
+  await expect(page).toHaveTitle(/Sajjad.*IT Support.*QA Engineer/);
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('M. Sajjad');
-  await expect(page.locator('.role')).toHaveText('QA Engineer');
+  await expect(page.locator('.role')).toHaveText('IT Support Specialist & QA Engineer');
 });
 
 test('shows key skills', async ({ page }) => {
   const skills = page.locator('#skills li');
-  for (const s of ['Cypress', 'TypeScript', 'Page Object Model', 'Allure Reports', 'AI-assisted Testing', 'Postman', 'Rest Assured', 'Regression Testing']) {
+  for (const s of ['1 & 2 Level IT Support', 'Microsoft 365', 'CMDB & Asset Management', 'Cypress', 'TypeScript', 'Page Object Model', 'Allure Reports', 'AI-assisted Testing', 'Postman', 'Rest Assured', 'Regression Testing']) {
     await expect(skills.filter({ hasText: s }).first()).toBeVisible();
   }
 });
@@ -25,9 +25,10 @@ test('lists all four jobs, most recent role first', async ({ page }) => {
   await expect(jobs.first()).toContainText('Dec 2025 – Oct 2026');
 });
 
-test('lists three certifications', async ({ page }) => {
-  await expect(page.locator('#certifications li')).toHaveCount(3);
+test('lists four certifications', async ({ page }) => {
+  await expect(page.locator('#certifications li')).toHaveCount(4);
   await expect(page.locator('#certifications')).toContainText('AZ-104');
+  await expect(page.locator('#certifications')).toContainText('AZ-900');
 });
 
 test('navigation links point to existing sections', async ({ page }) => {
@@ -48,11 +49,15 @@ test('LinkedIn link is present', async ({ page }) => {
   await expect(page.locator('#contact').getByRole('link', { name: 'LinkedIn' })).toHaveAttribute('href', 'https://www.linkedin.com/in/sajjad-m-245b9314');
 });
 
-test('CV PDF is downloadable', async ({ page, request }) => {
-  const href = await page.getByRole('link', { name: /Download CV/ }).getAttribute('href');
-  const res = await request.get(href);
-  expect(res.ok()).toBeTruthy();
-  expect(res.headers()['content-type']).toContain('pdf');
+test('both CV PDFs are downloadable', async ({ page, request }) => {
+  const links = page.getByRole('link', { name: /Download CV/ });
+  await expect(links).toHaveCount(2);
+  for (let i = 0; i < 2; i++) {
+    const href = await links.nth(i).getAttribute('href');
+    const res = await request.get(href);
+    expect(res.ok()).toBeTruthy();
+    expect(res.headers()['content-type']).toContain('pdf');
+  }
 });
 
 test('no horizontal overflow', async ({ page }) => {
@@ -114,9 +119,9 @@ for (const lang of ['en', 'da']) {
   });
 }
 
-test('shows two projects with links to their GitHub repositories', async ({ page }) => {
+test('shows three projects with links to their GitHub repositories', async ({ page }) => {
   const projects = page.locator('#projects .project');
-  await expect(projects).toHaveCount(2);
+  await expect(projects).toHaveCount(3);
 
   // Project 1: still a single link
   await expect(projects.nth(0).getByRole('link'))
