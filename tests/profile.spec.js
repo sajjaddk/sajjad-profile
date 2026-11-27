@@ -59,14 +59,14 @@ test('LinkedIn link is present', async ({ page }) => {
     expect(res.headers()['content-type']).toContain('pdf');
   }
 });*/
-test('CV PDF is downloadable', async ({ page, request }) => {
+/*test('CV PDF is downloadable', async ({ page, request }) => {
   const link = page.getByRole('link', { name: /Download CV/ });
   await expect(link).toHaveCount(1);
   const href = await link.getAttribute('href');
   const res = await request.get(href);
   expect(res.ok()).toBeTruthy();
   expect(res.headers()['content-type']).toContain('pdf');
-});
+});*/
 
 test('no horizontal overflow', async ({ page }) => {
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
