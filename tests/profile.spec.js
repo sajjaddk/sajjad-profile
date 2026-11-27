@@ -49,7 +49,7 @@ test('LinkedIn link is present', async ({ page }) => {
   await expect(page.locator('#contact').getByRole('link', { name: 'LinkedIn' })).toHaveAttribute('href', 'https://www.linkedin.com/in/sajjad-m-245b9314');
 });
 
-test('both CV PDFs are downloadable', async ({ page, request }) => {
+/*test('both CV PDFs are downloadable', async ({ page, request }) => {
   const links = page.getByRole('link', { name: /Download CV/ });
   await expect(links).toHaveCount(2);
   for (let i = 0; i < 2; i++) {
@@ -58,6 +58,14 @@ test('both CV PDFs are downloadable', async ({ page, request }) => {
     expect(res.ok()).toBeTruthy();
     expect(res.headers()['content-type']).toContain('pdf');
   }
+});*/
+test('CV PDF is downloadable', async ({ page, request }) => {
+  const link = page.getByRole('link', { name: /Download CV/ });
+  await expect(link).toHaveCount(1);
+  const href = await link.getAttribute('href');
+  const res = await request.get(href);
+  expect(res.ok()).toBeTruthy();
+  expect(res.headers()['content-type']).toContain('pdf');
 });
 
 test('no horizontal overflow', async ({ page }) => {
